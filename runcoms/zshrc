@@ -13,3 +13,8 @@ fi
 # Customize to your needs...
 alias ls='ls -F'
 alias sl=ls
+alias chrome='google-chrome >/dev/null 2>/dev/null &'
+alias less='less +Gg'
+export MANPAGER='less +Gg'
+export PATH=$HOME/Android/Sdk/platform-tools:$PATH
+
