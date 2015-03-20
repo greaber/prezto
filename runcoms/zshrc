@@ -11,10 +11,20 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-alias ls='ls -F'
+alias ls='ls -GF'
 alias sl=ls
-alias chrome='google-chrome >/dev/null 2>/dev/null &'
-alias less='less +Gg'
-export MANPAGER='less +Gg'
-export PATH=$HOME/Android/Sdk/platform-tools:$PATH
+alias cp='cp -i'
+alias h='fc -l 0 -1'
+alias hg='fc -l 0 -1|egrep'
+#alias chrome='google-chrome >/dev/null 2>/dev/null &'
+export LESS='-i -g -M -R -W'
+export PAGER=less
+export MANPAGER=less 
+#export PATH=$HOME/dlsave/idea-IU-139.659.2/bin:$PATH
+#export PATH=$HOME/Android/Sdk/platform-tools:$PATH
+#if [ "$GUAKE_AS_STARTUP_APPLICATION" = true ]; then
+#	GUAKE_AS_STARTUP_APPLICATION=false tmux new -s MAIN || tmux attach -t MAIN
+#fi
+#eval `dircolors ~/.dircolors`
+#cd $HOME
 
